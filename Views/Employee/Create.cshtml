@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Create Employee"
+}
+
+<from asp-action="Create">
+    <label> Ma nhan vien:</label>
+    <input type="number" name="EmployeeID" value ="2">
+    <br>
+    <label>Ho ten nhan vien:</label>
+    <input type="text" name="EmployeeName" value="Nguyen Van B">
+    <br>
+    <label>Tuoi</label>
+    <input type="text" name="Age" value="20">
+    <br>
+    <input type="submit" value="Send">
+</from>
+<h2>@ViewBag.EM</h2>

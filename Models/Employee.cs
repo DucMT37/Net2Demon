@@ -6,6 +6,6 @@ namespace Net2Demo.Models
 
         public int EmployeeName { get; set; }
 
-        public int Number { get; set; }
+        public int Age { get; set; }
     }
 }

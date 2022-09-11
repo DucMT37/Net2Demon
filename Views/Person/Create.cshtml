@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Create Person"
+}
+
+<from asp-action="Create">
+    <label> Ma so:</label>
+    <input type="number" name="PersonID" value ="3">
+    <br>
+    <label>Ho ten:</label>
+    <input type="text" name="PersonName" value="Nguyen Van C">
+    <br>
+    <label>Sodienthoai</label>
+    <input type="text" name="Phonenumber" value="0322456789">
+    <br>
+    <input type="submit" value="Send">
+</from>
+<h2>@ViewBag.PS</h2>
