@@ -1,0 +1,27 @@
+<h2> View Student/Index</h2>
+So sinh vien la:@ViewBag.CountStudent
+<table>
+    <tr>
+        <th>
+        <label>Ma sinh vien</label>
+
+    </th>
+    <th>
+        <label> Ten sinh vien</label>
+    </th>
+    <th>
+        <label> Tuoi</label>
+    </th>
+    </tr>
+    
+  @foreach (var item in ViewData["Student"] as List<Student>)
+  {
+    <tr>
+        <td>@item.StudentID</td>
+        <td>@item.StudentName</td>
+        <td>@item.Age</td>
+
+    </tr>
+  }
+
+</table>
