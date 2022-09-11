@@ -2,10 +2,10 @@ namespace Net2Demo.Models
 {
     public class Person
     {
-        public int PID { get; set; }
+        public int PersonID { get; set; }
 
-        public int PIN { get; set; }
+        public int PersonName { get; set; }
 
-        public int PA { get; set; }
+        public int Phonenumber { get; set; }
     }
 }
