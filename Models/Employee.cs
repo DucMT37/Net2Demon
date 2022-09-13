@@ -1,4 +1,4 @@
-namespace Net2Demo.Models
+namespace Net2Demo.Models;
 {
     public class Employee
     {
