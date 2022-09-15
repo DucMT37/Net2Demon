@@ -11,6 +11,9 @@ namespace Net2Demo.Controllers
 {
     public class HomeController : Controller
     {
+        GiaiPhuongTrinh gpt = new GiaiPhuongTrinh();
+        
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -36,6 +39,35 @@ namespace Net2Demo.Controllers
             ViewBag.ThongBao = Message;
             return View();
         }
+
+        //[HttpGet]
+
+        public IActionResult GiaiPhuongTrinh()
+        {
+            return view();
+        }
+
+        [HttpPost]
+        
+        public IActionResult GiaiPhuongTrinh1(String heSoA, string heSoB, string heSoC)
+        {
+            string thongbaobacnhat = gpt.GiaiPhuongTrinh1(heSoA, heSoB);
+            ViewBag.Message = ThongBaoBacNhat;
+            return View();
+           
+
+        }
+
+        [HttpPost]
+
+        public IActionResult GiaiPhuongTrinh2(String heSoA, string heSoB, string heSoC)
+        {
+            string thong baobachai = gpt.GiaiPhuongTrinh2(heSoA, heSoB, heSoC);
+            ViewBag.PT2 = ThongBaoBacHai;
+            return View();
+        }
+
+    
     }
     
 }
