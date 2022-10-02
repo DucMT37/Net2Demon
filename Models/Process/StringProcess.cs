@@ -42,14 +42,14 @@ public class StringProcess
     public string CapitalizeFirstCharacter(string input)
     {
     string[] arr = input.Split(" ");
-    string result = "";
+    string strResult = "";
 
     for (int i = 0; i < arr.Length; i++)
       {
-      result += arr[i].Substring(0, 1).ToUpper() + arr[i].Substring(1) + " ";
+      strResult += arr[i].Substring(0, 1).ToUpper() + arr[i].Substring(1) + " ";
       }
 
-    return result;
+    return strResult;
     }
 
     public string RemoveVietNameseAcccents(string input)
