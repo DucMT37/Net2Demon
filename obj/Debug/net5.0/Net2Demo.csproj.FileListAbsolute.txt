@@ -1,0 +1,8 @@
+D:\Net2Demo\obj\Debug\net5.0\Net2Demo.csprojAssemblyReference.cache
+D:\Net2Demo\obj\Debug\net5.0\Net2Demo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Net2Demo\obj\Debug\net5.0\Net2Demo.AssemblyInfoInputs.cache
+D:\Net2Demo\obj\Debug\net5.0\Net2Demo.AssemblyInfo.cs
+D:\Net2Demo\obj\Debug\net5.0\Net2Demo.csproj.CoreCompileInputs.cache
+D:\Net2Demo\obj\Debug\net5.0\Net2Demo.MvcApplicationPartsAssemblyInfo.cache
+D:\Net2Demo\obj\Debug\net5.0\Net2Demo.RazorAssemblyInfo.cache
+D:\Net2Demo\obj\Debug\net5.0\Net2Demo.RazorAssemblyInfo.cs

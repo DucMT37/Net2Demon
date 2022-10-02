@@ -10,7 +10,4 @@ namespace Net2Demo.Models;
         public int Age { get; set; }
     }
 
-
 }
- 
-    

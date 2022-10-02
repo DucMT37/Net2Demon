@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Net2Demo.Models;
+using Net2Demo.Models.Process
 
 namespace Net2Demo.Controllers
 {
     public class HomeController : Controller
     {
         GiaiPhuongTrinh gpt = new GiaiPhuongTrinh();
+        StringProcess strPro = new StringProcess();
         
 
         private readonly ILogger<HomeController> _logger;
@@ -64,6 +66,24 @@ namespace Net2Demo.Controllers
         {
             string thong baobachai = gpt.GiaiPhuongTrinh2(heSoA, heSoB, heSoC);
             ViewBag.PT2 = ThongBaoBacHai;
+            return View();
+        }
+
+        public IActionResult XuLyChuoi()
+        {
+            return View();
+        }
+
+        [HttpPost]
+
+        Public IActionResult XuLyChuoi()
+        {
+            ViewBag.thongTin = strPro.RemoveRemaningWhiteSpace(strInput);
+            ViewBag.thongTin = strPro.LowerToUpper(strInput);
+            ViewBag.thongTin = strPro.UpperToLower(strInput);
+            ViewBag.thongTin = strPro.CapitalizeOneFirstCharacter(strInput);
+            ViewBag.thongTin = strPro.CapitalizeFirstCharacter(strInput);
+            ViewBag.thongTin = strPro.RemoveVietnameseAccents(strInput);
             return View();
         }
 
